@@ -5,8 +5,6 @@ import requests
 from PIL import Image
 import base64
 
-
-# Custom CSS for styling with background image
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
@@ -93,7 +91,6 @@ def add_bg_from_local(image_file):
     )
 
 
-# Set background image (replace 'image.png' with your actual file path)
 add_bg_from_local('image.png')
 
 
